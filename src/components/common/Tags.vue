@@ -37,6 +37,8 @@
             closeTags(index) {
                 const delItem = this.tagsList.splice(index, 1)[0];
                 const item = this.tagsList[index] ? this.tagsList[index] : this.tagsList[index - 1];
+                // console.log(delItem);
+                // console.log(item);
                 if (item) {
                     delItem.path === this.$route.path && this.$router.push(item.path);
                 }else{

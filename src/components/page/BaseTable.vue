@@ -1,9 +1,9 @@
 <template>
     <div class="table">
         <div class="crumbs">
-            <el-breadcrumb separator="/">
-                <el-breadcrumb-item><i class="el-icon-tickets"></i> 基础表格</el-breadcrumb-item>
-            </el-breadcrumb>
+            <!--<el-breadcrumb separator="/">-->
+                <!--<el-breadcrumb-item><i class="el-icon-tickets"></i> 基础表格</el-breadcrumb-item>-->
+            <!--</el-breadcrumb>-->
         </div>
         <div class="container">
             <div class="handle-box">
@@ -125,11 +125,12 @@
                 if (process.env.NODE_ENV === 'development') {
                     this.url = '/ms/table/list';
                 };
-                this.$axios.post(this.url, {
-                    page: this.cur_page
-                }).then((res) => {
-                    this.tableData = res.data.list;
-                })
+                // this.$axios.post(this.url, {
+                //     page: this.cur_page
+                // }).then((res) => {
+                //     // console.log(res);
+                //     this.tableData = res.data.list;
+                // })
             },
             search() {
                 this.is_search = true;
@@ -165,6 +166,7 @@
                 this.multipleSelection = [];
             },
             handleSelectionChange(val) {
+                // console.log(val);
                 this.multipleSelection = val;
             },
             // 保存编辑
@@ -183,7 +185,6 @@
     }
 
 </script>
-
 <style scoped>
     .handle-box {
         margin-bottom: 20px;

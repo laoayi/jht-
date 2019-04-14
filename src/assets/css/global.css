@@ -1,0 +1,62 @@
+html,body,#app {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.login-container .el-input__inner {
+    width: 100%;
+    border: none;
+    height: 58px;
+    border-bottom:1px solid #e6e6e6;
+    font-size: 18px;
+  }
+
+  .box-card{
+      margin-top: 15px;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.15)
+  }
+
+  /* 按钮的样式 */
+  .btn{
+      border-color: #208fe5;
+      background-color: #208fe5;
+
+  }
+/*给card卡片区设置统一样式*/
+.box-card{
+    margin-top:15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
+}
+
+/*给el-table设置统一样式*/
+.el-table{
+  margin-top:15px;
+  font-size:12px;
+}
+
+/* el-mainn外边距清除 */
+.el-main{
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+/* .el-container .el-main{
+    background-color: #fff;
+} */
+
+/* role页面搜索框 */
+#role .el-input__inner {
+    height: 30px;
+    box-sizing: border-box;
+  
+  }
+  /* //面包屑 */
+   .el-breadcrumb {
+   height: 50px;
+     line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+ }
+ 

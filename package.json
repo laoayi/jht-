@@ -10,15 +10,19 @@
     "build:dll": "webpack --config build/webpack.dll.conf.js"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.23.0",
+    "echarts": "^4.2.1",
     "element-ui": "2.3.3",
+    "less": "~3.0.1",
+    "less-loader": "~4.0.6",
     "mavon-editor": "^2.5.4",
+    "node-jsencrypt": "^1.0.0",
     "vue": "^2.5.16",
     "vue-cropperjs": "^2.2.0",
     "vue-quill-editor": "3.0.6",
     "vue-router": "^3.0.1",
-    "vue-schart": "^0.1.4",
+    "vue-schart": "^1.0.0",
     "vuedraggable": "^2.16.0"
   },
   "devDependencies": {
